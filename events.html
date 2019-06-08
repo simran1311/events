@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <style>
+        #firstButton{
+            width: 120px;
+            height: 40px;
+            position: absolute;
+            left:50%;
+            top: 40%;
+            
+            
+        }
+        #text{
+            background-color: pink;
+            font-size: 50px;
+        }
+        #button2{
+            width: 200px;
+            height: 40px;
+            position: absolute;
+            left:50%;
+            top:60%;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <button id="firstButton"  onclick="myfun()">Change text</button>
+    <button id="button2" onclick="alert1()">click to generate alert</button>
+    <div id ="text" onmouseover="change()">
+            hello simran
+    </div>
+    <div>
+        hover on hello simran to change its background color.
+    </div>
+
+
+ <script>
+var a=document.getElementById("firstButton");
+var b=document.getElementById("text");
+var c=document.getElementById("button2");
+
+
+function myfun()
+{
+    console.log("simran");
+    a.innerHTML = "clicked!!"
+       
+}
+function change()
+{
+    b.style.backgroundColor = "grey";
+}
+function alert1()
+{
+alert("second button is clicked.");
+}
+a.myfun();
+b.change();
+c.alert();
+
+ </script>   
+</body>
+</html>
